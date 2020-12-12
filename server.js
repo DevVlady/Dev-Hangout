@@ -28,3 +28,5 @@ db.sequelize.sync({force: false}).then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
+//michaelbartek commit
