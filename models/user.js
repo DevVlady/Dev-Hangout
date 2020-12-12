@@ -12,6 +12,10 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
+    github_username: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     // The password cannot be null
     password: {
       type: DataTypes.STRING,
