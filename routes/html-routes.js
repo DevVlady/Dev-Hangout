@@ -25,12 +25,13 @@ module.exports = function(app) {
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, function(req, res) {
+    console.log('**MEMBERS.HTML**')
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
   //THIS IS THE ROUTE INDEX. THE HOMEPAGE. FIRST PAGE YOU WILL SEE
   app.get("/", (req, res) => {
-    console.log('**PROFILE.HTML**')
+    console.log('**ROOT.HTML**')
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
@@ -39,7 +40,7 @@ module.exports = function(app) {
   //   res.sendFile(path.join(__dirname, "../public/login.html"));
   // });
   app.get("/signup", (req, res) => {
-    console.log('**PROFILE.HTML**')
+    console.log('**SIGNUP.HTML**')
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
