@@ -1,0 +1,70 @@
+/* Applies to all sections of HTML */
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* Home-Page */
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    background-color:#1a1a1d;
+    color: #FFF;
+}
+
+main > div {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+#continue-button {
+    padding: 10px;
+    margin: 15px;
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 85px;
+}
+
+h6 .lets-hang{
+    display: none;
+}
+
+h6:hover .title{
+    display: none;
+}
+
+h6:hover .lets-hang{
+    display: inline;
+    color: #c3073f;
+    font-size: 180px;
+}
+#slogan {
+    margin: 25px;
+    color:#c3073f;
+    font-size: 45px;
+}
+
+#submit-message{
+    color: #4e4e50;
+    margin: 25px;
+}
+
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
