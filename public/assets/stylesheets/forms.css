@@ -1,0 +1,15 @@
+body {
+  background-color: #1F2833;
+}
+
+.container {
+  background-color: rgb(130, 149, 155);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+  height: 450px;
+  padding-top: 40px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
+  border-radius: 5%;
+}

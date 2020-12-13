@@ -3,33 +3,58 @@
 
 <head>
   <title>Passport Authentication</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/sketchy/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+  <link href="./assets/stylesheets/members.css" rel="stylesheet" />
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
+  <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/logout"> Logout </a>
+        </div>
+      </div>
+    </nav> -->
+
+  <div class="wrapper">
+    <div class="sidebar">
+      <a id="dash" href="./index.html">
+        <h3>Dev Meet-Up</h3>
       </a>
+      <ul>
+        <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+        <li><a href=""><i class="fas fa-user"></i>Profile</a></li>
+        <li><a href=""><i class="fas fa-address-card"></i>About</a></li>
+        <li><a href=""><i class="fas fa-map-pin"></i>Map</a></li>
+        <li><a href=""><i class="fas fa-comments"></i>Live Chat</a></li>
+        <li><a href="/logout"><i class="fas fa-power-off"></i>Logout</a></li>
+      </ul>
     </div>
-  </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+
+    <div class="main_content">
+      <div>
         <h2>Welcome <span class="member-name"></span></h2>
       </div>
+
+      <div class="info">
+
+        <!-- button for creating form  -->
+        <div>
+
+        </div>
+        <!-- main contest div   -->
+      </div>
+      <!-- wrapper div  -->
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/members.js"></script>
 </body>
 
 </html>
