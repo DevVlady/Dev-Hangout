@@ -1,6 +1,8 @@
 body {
   background-color: #1F2833;
   margin: 0px;
+  font-family: 'Fjalla One', sans-serif;
+  background-image: url('https://i.pinimg.com/originals/de/fa/28/defa283a2b0cec1ebabede862375bfb6.jpg');
 }
 
 .container {
@@ -14,3 +16,16 @@ body {
   border-radius: 10%;
   width: 50%;
 }
+
+.title{
+  font-size: 85px;;
+  color: #FFF;
+}
+
+.dev-hang{
+  text-align: center;
+  margin-top: 80px;
+}
+
+
+
