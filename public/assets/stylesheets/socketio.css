@@ -23,6 +23,10 @@ body {
     position: fixed;
 }
 
+.current-page{
+    color: black;
+}
+
 .sidebar h3 {
     color: #fff;
     text-transform: uppercase;
