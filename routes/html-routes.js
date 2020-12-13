@@ -6,13 +6,21 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function(app) {
 
-  // app.get("/", function(req, res) {
-  //   // If the user already has an account send them to the members page
-  //   if (req.user) {
-  //     res.redirect("/members");
-  //   }
-  //   res.sendFile(path.join(__dirname, "../public/signup.html"));
-  // });
+  app.get("/", function(req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/members");
+    }
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+  });
+
+  app.get("/signup", function(req, res) {
+    // If the user already has an account send them to the members page
+    if (req.user) {
+      res.redirect("/members");
+    }
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
+  });
 
   app.get("/login", function(req, res) {
     // If the user already has an account send them to the members page
@@ -26,21 +34,6 @@ module.exports = function(app) {
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", isAuthenticated, function(req, res) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
-  });
-
-  //THIS IS THE ROUTE INDEX. THE HOMEPAGE. FIRST PAGE YOU WILL SEE
-  app.get("/", (req, res) => {
-    console.log('**PROFILE.HTML**')
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-  });
-
-  // app.get("/login", (req, res) => {
-  //   console.log('**PROFILE.HTML**')
-  //   res.sendFile(path.join(__dirname, "../public/login.html"));
-  // });
-  app.get("/signup", (req, res) => {
-    console.log('**signup.HTML**')
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
 };
