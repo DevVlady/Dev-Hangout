@@ -39,7 +39,7 @@ module.exports = function(app) {
   //   res.sendFile(path.join(__dirname, "../public/login.html"));
   // });
   app.get("/signup", (req, res) => {
-    console.log('**PROFILE.HTML**')
+    console.log('**signup.HTML**')
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
