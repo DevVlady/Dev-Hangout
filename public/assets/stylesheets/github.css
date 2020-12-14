@@ -4,7 +4,34 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Fjalla One", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 45px;
+    background-color: chartreuse;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+.profile-info {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.github-name {
+    color: blue;
 }
 
 body {
@@ -31,9 +58,11 @@ body {
 .wrapper .sidebar h3 {
     color: black;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 25px;
 }
 
 .wrapper .sidebar ul li {
@@ -41,6 +70,7 @@ body {
     border-bottom: 1px solid #bdb8d7;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-left: -35px;
 }
 
 .wrapper .sidebar ul li a {
