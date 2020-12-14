@@ -32,14 +32,6 @@ db.sequelize.sync({force: false}).then(function() {
   });
 });
 
-<<<<<<< HEAD
-// var io = require("socket.io").listen(server);
-// app.set("port", (process.env.PORT || 8080));
-// var server = app.listen(app.get("port"), function(){
-//   console.log("Server started: http://localhost:" + app.get("port") + "/");
-// })
-
-=======
 
 
 // Setup basic express server
@@ -125,4 +117,3 @@ io.on('connection', (socket) => {
     }
   });
 });
->>>>>>> 338b168411b0d3e05b8033e5aa6b8d2b93d3e2f5
