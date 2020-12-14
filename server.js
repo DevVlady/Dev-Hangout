@@ -96,7 +96,7 @@ app.get('/login/github/callback', async (req, res) => {
       req.session.token = token;
       console.log('***req.session.token:', req.session.token);
       console.log('***token:', token);
-      res.redirect('/members')
+      res.redirect('/github')
 
   } else {
       console.log('Oooops....Error!')
