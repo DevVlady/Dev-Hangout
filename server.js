@@ -6,8 +6,8 @@ var passport = require("./config/passport");
 
 //Requiring Fetch for GiutHub use
 const fetch = require('node-fetch');
-const cookieSession = require('cookie-session');
-// Variables to get the Keys from env File
+// const cookieSession = require('cookie-session');
+// Variables to get the Keys from env File - GitHub
 const client_id = process.env.GITHUB_CLIENT_ID;
 const client_secret = process.env.GITHUB_CLIENT_SECRET;
 const cookie_secret = process.env.COOKIE_SECRET;
@@ -34,9 +34,9 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 //Cookie Session to keep track of the user - GitHub
-app.use(cookieSession({
-  secret: cookie_secret
-}));
+// app.use(cookieSession({
+//   secret: cookie_secret
+// }));
 
 //Route for the user to login - GitHub
 app.get('/login/github', (req, res) => {
@@ -89,14 +89,12 @@ app.get('/login/github/callback', async (req, res) => {
   if (githubData) {
       req.session.githubId = githubData.id;
       req.session.token = token;
-      res.redirect('/dashboard')
+      res.redirect('/members')
   } else {
       console.log('Oooops....Error!')
       res.send('Oooops....Error!')
   }
 })
-
-
 
 
 // Syncing our database and logging a message to the user upon success
