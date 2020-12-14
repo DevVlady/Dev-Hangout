@@ -45,7 +45,7 @@ app.get('/login/github', (req, res) => {
   console.log('***LOGIN/GITHUB***')
 })
 
-//Function to get access token from API
+//Function to get access token from GitHub API
 async function getAccessToken(code) {
   const res = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
@@ -79,6 +79,23 @@ async function getGithubUser(access_token) {
   console.log(data)
   return data;
 }
+
+
+//Callback route once the user successfully logs in using GitHub
+app.get('/login/github/callback', async (req, res) => {
+  const code = req.query.code;
+  const token = await getAccessToken(code);
+  const githubData = await getGithubUser(token);
+  if (githubData) {
+      req.session.githubId = githubData.id;
+      req.session.token = token;
+      res.redirect('/dashboard')
+  } else {
+      console.log('Oooops....Error!')
+      res.send('Oooops....Error!')
+  }
+})
+
 
 
 
