@@ -8,6 +8,9 @@ var passport = require("./config/passport");
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
+
+//variables for socket io
+
 // Creating express app and configuring middleware needed for authentication
 var app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -28,3 +31,10 @@ db.sequelize.sync({force: false}).then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
+// var io = require("socket.io").listen(server);
+// app.set("port", (process.env.PORT || 8080));
+// var server = app.listen(app.get("port"), function(){
+//   console.log("Server started: http://localhost:" + app.get("port") + "/");
+// })
+
