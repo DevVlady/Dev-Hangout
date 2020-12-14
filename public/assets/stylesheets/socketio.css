@@ -4,99 +4,91 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: "Fjalla One", sans-serif;
-}
-
-body {
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+  body {
     background-color: #f3f5f9;
-}
-
-#dash {
+  }
+  
+  .wrapper {
+    display: flex;
+    position: relative;
+  }
+  
+  #dash{
     text-decoration: none;
-}
-
-.sidebar {
-    width: 250px;
+  }
+  
+  .wrapper .sidebar {
+    width: 200px;
     height: 100%;
-    background: #950740;
-    /* padding: 30px 0px; */
+    background:#950740;
+    padding: 30px 0px;
     position: fixed;
-}
-
-.current-page{
-    color: black;
-}
-
-.sidebar h3 {
+  }
+  
+  .wrapper .sidebar h3 {
     color: #fff;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     margin-bottom: 30px;
-    font-family: "Fjalla One", sans-serif;
-    margin-left: 15px;
-}
-
-.sidebar ul li {
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper .sidebar ul li {
     padding: 15px;
     border-bottom: 1px solid #bdb8d7;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.sidebar ul li a {
+  }
+  
+  .wrapper .sidebar ul li a {
     color: #fff;
     display: block;
     text-decoration: none;
-}
-
-.sidebar ul li a .fas {
+  }
+  
+  .wrapper .sidebar ul li a .fas {
     width: 25px;
-}
-
-.sidebar ul li:hover {
+  }
+  
+  .wrapper .sidebar ul li:hover {
     background-color: #bdb8d7;
-}
-
-.sidebar ul li:hover a {
+  }
+  
+  .wrapper .sidebar ul li:hover a {
     color: #fff;
-}
-
-.pages{
-    width: 50%;
-}
-
-.main_content .header {
+  }
+  
+  .wrapper .main_content {
+    width: 100%;
+    margin-left: 200px;
+  }
+  
+  .wrapper .main_content .header {
     padding: 20px;
     background: #fff;
     color: #4e4e50;
     border-bottom: 1px solid #e0e4e8;
-}
-
-.main_content .info {
+  }
+  
+  .wrapper .main_content .info {
     margin: 20px;
     color: #717171;
     line-height: 25px;
-}
-
-.main_content .info div {
+  }
+  
+  .wrapper .main_content .info div {
     margin-bottom: 20px;
-}
+  }
 
-#create_form {
-    background-color: #4e4e50;
-    margin-bottom: 5px;
-    color: white;
-    padding: 3px 6px;
-    font-family: "Fjalla One", sans-serif;
-}
-
-@media (max-height: 500px) {
+  @media (max-height: 500px) {
     .social_media {
-        display: none !important;
+      display: none !important;
     }
-}
-
-
+  }
 /**********************************BELOW IS SOCKET CSS*********************************************/
 
 
@@ -107,8 +99,7 @@ html {
 
 html,
 input {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 html,
@@ -125,63 +116,80 @@ ul {
 
 /* Pages */
 
-.pages {
+ .pages {
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-}
+}  
 
 .page {
-    height: 50%;
-    position: absolute;
+    /* height: 100%; */
+    /* position: absolute; */
     width: 100%;
-}
+} 
 
 /* Login Page */
 
 .login.page {
-    background-color: #000;
-}
-
-.login.page .form {
-    height: 100px;
-    margin-top: -100px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
+    background-color: #1a1a1d;;
     width: 100%;
 }
 
+.login.page .form {
+    /* height: 100px; 
+    margin-top: -100px; 
+    position: absolute; */
+    text-align: center;
+    /* top: 50%;  
+    width: 100%;  */
+}
+
 .login.page .form .usernameInput {
-    background-color: transparent;
+    /* background-color: transparent;
+    color: black;
     border: none;
     border-bottom: 2px solid #fff;
     outline: none;
     padding-bottom: 15px;
     text-align: center;
-    width: 400px;
+    width: 100%; */
+} 
+
+.login.page .form .usernameInput {
+    background:#FFF;
+    outline: none;
+    color: #950740;
+    height: 50%;
+    margin: 15px 0;
+    font-family: 'Fjalla One', sans-serif;
+
 }
 
 .login.page .title {
     font-size: 200%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .login.page .usernameInput {
     font-size: 200%;
     letter-spacing: 3px;
+    
 }
 
 .login.page .title,
 .login.page .usernameInput {
     color: #fff;
     font-weight: 100;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 /* Chat page */
 
 .chat.page {
     display: none;
+    padding-bottom: 0;
 }
 
 /* Font */
@@ -204,7 +212,7 @@ ul {
 /* Messages */
 
 .chatArea {
-    height: 100%;
+    height: 100%; 
     padding-bottom: 60px;
 }
 
@@ -216,7 +224,8 @@ ul {
 }
 
 .message.typing .messageBody {
-    color: gray;
+    color: black;
+
 }
 
 .username {
@@ -229,13 +238,27 @@ ul {
 /* Input */
 
 .inputMessage {
-    border: 10px solid #000;
+    border: 3px solid #1F2833;
     bottom: 0;
     height: 60px;
     left: 0;
     outline: none;
     padding-left: 10px;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     width: 100%;
 }
+
+.chat-location {  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border-top: 3px solid #1F2833;
+    background-color: lightslategray;
+    position: fixed;
+  }
