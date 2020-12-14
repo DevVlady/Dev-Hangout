@@ -45,6 +45,40 @@ app.get('/login/github', (req, res) => {
   console.log('***LOGIN/GITHUB***')
 })
 
+//Function to get access token from API
+async function getAccessToken(code) {
+  const res = await fetch('https://github.com/login/oauth/access_token', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          client_id,
+          client_secret,
+          code,
+      }),
+
+  })
+  console.log(code)
+  console.log('***getAccessToken()***')
+  const data = await res.text();
+  const params = new URLSearchParams(data);
+  return params.get("access_token");
+}
+
+//Function to get the github user using the GitHub API
+async function getGithubUser(access_token) {
+  const req = await fetch('https://api.github.com/user', {
+      headers: {
+          Authorization: `bearer ${access_token}`,
+      },
+  });
+  console.log(access_token)
+  console.log('***getGithubUser()***')
+  const data = await req.json();
+  console.log(data)
+  return data;
+}
 
 
 
