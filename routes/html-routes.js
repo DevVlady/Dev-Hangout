@@ -32,25 +32,22 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
-  app.get('/auth/github',
-    passport.authenticate('github'));
+  // app.get('/auth/github',
+  //   passport.authenticate('github'));
 
-  //Github
-  app.get('/auth/github/callback',
-    passport.authenticate('github', { failureRedirect: '/login' }),
-    function (req, res) {
-      // Successful authentication, redirect home.
-      // res.redirect('/members');
-      res.sendFile(path.join(__dirname, "../public/members.html"));
-    });
+  // //Github
+  // app.get('/auth/github/callback',
+  //   passport.authenticate('github', { failureRedirect: '/login' }),
+  //   function (req, res) {
+  //     // Successful authentication, redirect home.
+  //     res.redirect('/members');
+  //   });
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
   app.get("/members", function (req, res) {
     console.log('***get/members***')
-    res.redirect('/auth/github/callback')
-    // res.sendFile(path.join(__dirname, "../public/members.html"));
-
+    res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
 };
