@@ -3,8 +3,16 @@ var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
+
 //Requiring Fetch for GiutHub use
 const fetch = require('node-fetch');
+const cookieSession = require('cookie-session');
+// Variables to get the Keys from env File
+const client_id = process.env.GITHUB_CLIENT_ID;
+const client_secret = process.env.GITHUB_CLIENT_SECRET;
+const cookie_secret = process.env.COOKIE_SECRET;
+console.log({ client_id, client_secret })
+
 
 
 // Setting up port and requiring models for syncing
@@ -24,6 +32,21 @@ app.use(passport.session());
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+
+//Cookie Session to keep track of the user - GitHub
+app.use(cookieSession({
+  secret: cookie_secret
+}));
+
+//Route for the user to login - GitHub
+app.get('/login/github', (req, res) => {
+  const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=http://localhost:8080/login/github/callback`;
+  res.redirect(url);
+  console.log('***LOGIN/GITHUB***')
+})
+
+
+
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({force: false}).then(function() {
