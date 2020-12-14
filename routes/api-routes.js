@@ -2,12 +2,6 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
-//Variables to access keys from env file
-const client_id = process.env.GITHUB_CLIENT_ID;
-const client_secret = process.env.GITHUB_CLIENT_SECRET;
-const cookie_secret = process.env.COOKIE_SECRET;
-
-
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -33,13 +27,6 @@ module.exports = function(app) {
       });
   });
 
-  //Route for user to signup using github
-  app.get('/login/github', (req, res) => {
-    const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=http://localhost:8080/login/github/callback`;
-    res.redirect(url);
-    console.log('***LOGIN/GITHUB***')
-  })
-
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -61,4 +48,5 @@ module.exports = function(app) {
       });
     }
   });
+
 };
