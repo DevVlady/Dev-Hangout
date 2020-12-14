@@ -40,13 +40,15 @@ require("./routes/api-routes.js")(app);
 
 //Route for the user to login - GitHub
 app.get('/login/github', (req, res) => {
+  console.log('***LOGIN/GITHUB***')
   const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=http://localhost:8080/login/github/callback`;
   res.redirect(url);
-  console.log('***LOGIN/GITHUB***')
+
 })
 
 //Function to get access token from GitHub API
 async function getAccessToken(code) {
+  console.log('***getAccessToken()***')
   const res = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
       headers: {
@@ -60,7 +62,6 @@ async function getAccessToken(code) {
 
   })
   console.log(code)
-  console.log('***getAccessToken()***')
   const data = await res.text();
   const params = new URLSearchParams(data);
   return params.get("access_token");
@@ -68,28 +69,34 @@ async function getAccessToken(code) {
 
 //Function to get the github user using the GitHub API
 async function getGithubUser(access_token) {
+  console.log('***getGithubUser()***')
   const req = await fetch('https://api.github.com/user', {
       headers: {
           Authorization: `bearer ${access_token}`,
       },
   });
   console.log(access_token)
-  console.log('***getGithubUser()***')
   const data = await req.json();
-  console.log(data)
+  console.log('***data:', data)
   return data;
 }
 
 
 //Callback route once the user successfully logs in using GitHub
 app.get('/login/github/callback', async (req, res) => {
+  console.log('***/login/github/callback***')
   const code = req.query.code;
   const token = await getAccessToken(code);
   const githubData = await getGithubUser(token);
   if (githubData) {
+      console.log('**githubData:', githubData);
       req.session.githubId = githubData.id;
+      console.log('***req.session.githubId:', req.session.githubId);
       req.session.token = token;
+      console.log('***req.session.token:', req.session.token);
+      console.log('***token:', token);
       res.redirect('/members')
+
   } else {
       console.log('Oooops....Error!')
       res.send('Oooops....Error!')
