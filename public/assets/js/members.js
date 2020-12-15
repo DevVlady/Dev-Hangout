@@ -1,3 +1,17 @@
+const chatButton = document.querySelector('#chatBtn');
+chatButton.addEventListener('click', displaySocketIo)
+function displaySocketIo() {
+  const socketIoSection = document.querySelector('#socket-content');
+  if (socketIoSection.classList.contains('d-none')) {
+    socketIoSection.classList.remove('d-none');
+  } else {
+    socketIoSection.classList.add('d-none');
+  }
+}
+
+
+
+
 $(document).ready(function() {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
