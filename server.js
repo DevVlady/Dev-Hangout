@@ -14,15 +14,11 @@ const client_secret = process.env.GITHUB_CLIENT_SECRET;
 const cookie_secret = process.env.COOKIE_SECRET;
 console.log({ client_id, client_secret })
 
-
 var socket = require('socket.io');
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
-
-
-//variables for socket io
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
@@ -48,7 +44,6 @@ app.get('/login/github', (req, res) => {
   console.log('***LOGIN/GITHUB***')
   const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=https://dev-hangout.herokuapp.com/login/github/callback`;
   res.redirect(url);
-
 })
 
 //Function to get access token from GitHub API
@@ -64,7 +59,6 @@ async function getAccessToken(code) {
           client_secret,
           code,
       }),
-
   })
   console.log(code)
   const data = await res.text();
@@ -86,7 +80,6 @@ async function getGithubUser(access_token) {
   return data;
 }
 
-
 //Callback route once the user successfully logs in using GitHub
 app.get('/login/github/callback', async (req, res) => {
   console.log('***/login/github/callback***')
@@ -101,13 +94,11 @@ app.get('/login/github/callback', async (req, res) => {
       console.log('***req.session.token:', req.session.token);
       console.log('***token:', token);
       res.redirect('/github')
-
   } else {
       console.log('Oooops....Error!')
       res.send('Oooops....Error!')
   }
 })
-
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({force: false}).then(function() {
