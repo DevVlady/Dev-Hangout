@@ -129,7 +129,7 @@ body {
     margin-bottom: 5px;
     color: white;
     padding: 3px 6px;
-    font-family: "Fjalla One", sans-serif;
+    /* font-family: "Fjalla One", sans-serif; */
 }
 
 @media (max-height: 500px) {
@@ -140,11 +140,14 @@ body {
 
 
 /**********************************BELOW IS SOCKET CSS*********************************************/
-
+.socket_content {
+    display: inline;
+    width: 20%;
+}
 
 html {
     font-weight: 300;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
 }
 
 /* html,
