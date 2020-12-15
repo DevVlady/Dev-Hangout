@@ -34,6 +34,8 @@ $(document).ready(function() {
             $("#bio").text(data.bio)
             $("#followers").text(data.followers)
             $("#following").text(data.following)
+            $("#gitrepos").text(data.public_repos)
+
             $("#githubUrl").attr(`href`, data.html_url)
 
         })

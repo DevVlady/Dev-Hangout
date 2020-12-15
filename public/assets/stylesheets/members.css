@@ -28,8 +28,8 @@ h3 > span {
 
 img {
   margin-top: -60px;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   margin-left: 25px;
   border-radius: 50%;
   margin-bottom: 15px;
@@ -37,8 +37,16 @@ img {
   margin-right: 25px;
 }
 
-.github-name {
+.main_content {
+  background-color: rgb(79, 233, 250);
+}
+
+#githubName {
   color: blue;
+}
+
+#githubUrl {
+  font-weight: bold;
 }
 
 body {
@@ -167,10 +175,10 @@ ul {
 }
 
 .page {
-  height: 195%;
+  height: 171%;
   position: absolute;
-  width: 83%;
-  margin-top: 85px;
+  width: 84%;
+  margin-top: 1px;
   margin-left: 10px;
 }
 
