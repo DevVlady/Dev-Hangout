@@ -188,7 +188,7 @@ ul {
 /* Chat page */
 
 .chat.page {
-    display: none;
+    /* display: none; */
     padding-bottom: 0;
 }
 
@@ -196,10 +196,12 @@ ul {
 
 .messages {
     font-size: 150%;
+    color:black;
 }
 
 .inputMessage {
     font-size: 100%;
+    color:black;
 }
 
 .log {
@@ -261,4 +263,5 @@ ul {
     border-top: 3px solid #1F2833;
     background-color: lightslategray;
     position: fixed;
+    
   }
