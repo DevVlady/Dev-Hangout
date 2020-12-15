@@ -3,5 +3,31 @@ $(document).ready(function() {
   // and updates the HTML on the page
   $.get("/api/user_data").then(function(data) {
     $(".member-name").text(data.username);
+    
+  
+  // function github () {
+  //   // $("#submitBtn").on("click", function(event){  
+  //       // event.preventDefault();
+  //       var username = $("#username-input").val();
+  //       console.log(username);
+  //       // "Hoybaby"
+      
+        $.ajax({
+        
+            url: "https://api.github.com/users/" + data.username,
+            type:"GET",
+            dataType: 'json',
+        }) .then(function(data){
+            console.log(data)
+            $("#githubName").text(data.name)
+            $("#githubLocation").text(data.location)
+        })
+        // axios.get(`https://api.github.com/users/${username}`)
+        // .then(async function init(res) {
+        //     try {
+        //     console.log(res);
+    
+        //     }
+    // }
   });
 });
