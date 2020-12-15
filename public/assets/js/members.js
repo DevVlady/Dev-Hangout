@@ -27,13 +27,14 @@ $(document).ready(function() {
             dataType: 'json',
         }) .then(function(data){
             console.log(data)
-            $("#profilepic").attr(`src`, data.avatar_url.url)
+            $("#profilepic").attr(`src`, data.avatar_url)
             $("#githubName").text(data.name)
             $("#location").text(data.location)
             $("#githubId").text(data.login)
             $("#bio").text(data.bio)
             $("#followers").text(data.followers)
             $("#following").text(data.following)
+            $("#githubUrl").attr(`href`, data.html_url)
 
         })
         // axios.get(`https://api.github.com/users/${username}`)
