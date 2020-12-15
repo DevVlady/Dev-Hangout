@@ -39,6 +39,7 @@ img {
 
 .main_content {
   background-color: rgb(79, 233, 250);
+  margin-bottom: 55px;
 }
 
 #githubName {
@@ -175,11 +176,11 @@ ul {
 }
 
 .page {
-  height: 171%;
+  height: 152%;
   position: absolute;
   width: 84%;
   margin-top: 1px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /* Login Page */
@@ -218,18 +219,16 @@ ul {
 
 .login.page .title,
 .login.page .usernameInput {
-  color: red;
+  color: white;
   font-weight: 400;
 }
 
 /* Chat page */
-
 .chat.page {
   display: none;
 }
 
 /* Font */
-
 .messages {
   font-size: 150%;
 }
