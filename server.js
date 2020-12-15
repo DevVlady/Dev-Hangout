@@ -4,9 +4,14 @@ var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
+var socket = require('socket.io');
+
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
+
+
+//variables for socket io
 
 // Creating express app and configuring middleware needed for authentication
 var app = express();
@@ -24,19 +29,21 @@ require("./routes/api-routes.js")(app);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({force: false}).then(function() {
-  app.listen(PORT, function() {
-    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
-  });
+  console.log("database was succesful");
+  //  var server = app.listen(PORT, function() {
+  //   console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+  // });
 });
 
+var server = app.listen(PORT, function() {
+  console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+});
 
-
+var io = socket(server);
 // Setup basic express server
 // const express = require('express');
 // const app = express();
-const path = require('path');
-const server = require('http').createServer(app);
-const io = require('socket.io')(server);
+
 // const port = process.env.PORT || 3000;
 
 // server.listen(PORT, () => {
@@ -51,7 +58,7 @@ io.on('connection', (socket) => {
   });
 });
 // Routing
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // Chatroom
 
