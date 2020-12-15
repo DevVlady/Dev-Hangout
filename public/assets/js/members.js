@@ -13,7 +13,7 @@ $(document).ready(function() {
   //       // "Hoybaby"
       
         $.ajax({
-         
+        
             url: "https://api.github.com/users/" + data.username,
             type:"GET",
             dataType: 'json',
