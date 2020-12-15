@@ -9,25 +9,32 @@
 h2 {
     text-align: center;
     font-size: 45px;
-    background-color: chartreuse;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: gray;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
-h3 {
-    margin-left: 15px;
+
+h3 > span {
+    font: outline;
+    font-size: 25px;
+    font-style: initial;
+    font-weight: 200;
 }
 
-.profile-info {
-    margin-left: 15px;
-    margin-top: 15px;
+#profile-info {
+    display: inline;
 }
 
 img {
-    height: 200px;
-    width: 200px;
-    margin-left: 15px;
+    margin-top: -60px;
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
     border-radius: 50%;
+    margin-bottom: 15px;
+    float: left;
+    margin-right: 25px;
 }
 
 .github-name {
@@ -126,4 +133,9 @@ body {
     .social_media {
         display: none !important;
     }
+}
+
+
+.avatar{
+    width: 100%
 }
