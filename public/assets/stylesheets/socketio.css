@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
@@ -13,8 +12,6 @@ h2 {
     background-color: gray;
     padding-top: 35px;
     padding-bottom: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
 
@@ -129,7 +126,7 @@ body {
     margin-bottom: 5px;
     color: white;
     padding: 3px 6px;
-    /* font-family: "Fjalla One", sans-serif; */
+    font-family: "Fjalla One", sans-serif;
 }
 
 @media (max-height: 500px) {
@@ -140,21 +137,14 @@ body {
 
 
 /**********************************BELOW IS SOCKET CSS*********************************************/
-.socket_content {
-    display: inline;
-    width: 20%;
+#socket_content {
+    width: 0px;
 }
 
 html {
     font-weight: 300;
-    /* -webkit-font-smoothing: antialiased; */
+    -webkit-font-smoothing: antialiased;
 }
-
-/* html,
-input {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-    Helvetica, Arial, "Lucida Grande", sans-serif;
-} */
 
 html,
 body {
@@ -169,18 +159,19 @@ ul {
 }
 
 /* Pages */
-
 .pages {
     height: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .page {
-    height: 50%;
+    height: 195%;
     position: absolute;
-    width: 100%;
+    width: 83%;
+    margin-top: 85px;
+    margin-left: 10px;
 }
 
 /* Login Page */
@@ -219,8 +210,8 @@ ul {
 
 .login.page .title,
 .login.page .usernameInput {
-    color: #fff;
-    font-weight: 100;
+    color: red;
+    font-weight: 400;
 }
 
 /* Chat page */

@@ -46,7 +46,7 @@ require("./routes/api-routes.js")(app);
 //Route for the user to login - GitHub
 app.get('/login/github', (req, res) => {
   console.log('***LOGIN/GITHUB***')
-  const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=http://localhost:8080/login/github/callback`;
+  const url = `https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=https://dev-hangout.herokuapp.com/login/github/callback`;
   res.redirect(url);
 
 })
