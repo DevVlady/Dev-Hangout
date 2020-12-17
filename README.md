@@ -15,7 +15,7 @@
 
 * [Website](#website)
 
-* [Technpologies](#technologies)
+* [Technologies](#technologies)
 
 * [Contribute](#contribute)
 
@@ -30,10 +30,10 @@
 * To begin, click on the deployed link below which will take you directly to the application website.
 * Next you will have two options if this is your first time visiting the website.
     * Signup using your email address, creating a username & password.
-    * Signup using your github credentials by clicking on the signup through github.
+    * Signup using your GitHub credentials by clicking on the signup through GitHub.
 * Once signed in, you will have all your information displayed on the webpage which is carried over from the signup form you completed at the signup page.
-* If you chose the option of signup using github, then all your form info from GitHub will be displayed on the page to add a personalized touch.
-* On the left side where the menu bar is located, you have the livechat option currently available. This will allow you to have to messege anyone on the chat which allows for more interaction between developers.
+* If you chose the option of signup using GitHub, then all your form info from GitHub will be displayed on the page to add a personalized touch.
+* On the left side where the menu bar is located, you have the live chat option currently available. This will allow you to have to message anyone on the chat which allows for more interaction between developers.
 
 ## Website
 
@@ -42,7 +42,7 @@
 
 ## Technologies
 
-#### Technologies, applications, and programs utilized in this project are Express.js, Node.js, JavaScript, CSS3, HTML5, SocketIo, GitHub API, Github OAuth, jQuery, & Passport.js.
+#### Technologies, applications, and programs utilized in this project are Express.js, Node.js, JavaScript, CSS3, HTML5, SocketIo, GitHub API, GitHub OAuth, jQuery, & Passport.js.
 
 ## Contribute
 
