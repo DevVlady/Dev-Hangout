@@ -1,4 +1,5 @@
 # Dev Hangout
+    For Developers, By Developers
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -41,4 +42,12 @@
 
 ## Technologies
 
-#### Technologies, applications, and programs utilized in this project are Express.js, Node.js, JavaScript, CSS3, HTML5, SocketIo, GitHub API, Github OAuth, Passport.js
+#### Technologies, applications, and programs utilized in this project are Express.js, Node.js, JavaScript, CSS3, HTML5, SocketIo, GitHub API, Github OAuth, jQuery, & Passport.js.
+
+## Contribute
+
+#### This project had 4 contributors, Vladimir Dimitrov, Michael Bartek, Michael Spitzer, & Joshua Obando. Vladimir Dimitrov & Michael Bartek mainly worked on backend & Michael Spitzer & Joshua Obando worked on front end.
+
+## Questions
+
+#### If you have any questions about the repo, please open an issue or contact me directly at vladimir.s.dimitrov14@gmail.com. You can find more of my work by clicking on this link: https://github.com/Vlady14.
