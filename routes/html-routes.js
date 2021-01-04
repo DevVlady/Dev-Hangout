@@ -47,7 +47,7 @@ module.exports = function (app) {
   //Route for the user to login - GitHub
   app.get("/login/github", (req, res) => {
     console.log("GET /login/github");
-    const url = `https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=https://cors-anywhere.herokuapp.com/https://localhost:8080/login/github/callback`;
+    const url = `https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/authorize?client_id=${client_id}&redirect_uri=https://cors-anywhere.herokuapp.com/https://dev-hangout.herokuapp.com/login/github/callback`;
     res.redirect(url);
   });
 
