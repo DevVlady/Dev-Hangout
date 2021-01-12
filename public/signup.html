@@ -6,39 +6,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" />
+  <link rel="shortcut icon" href="./assets/icons/Prorammer-Icon.png" type="image/x-icon">
   <link href="./assets/stylesheets/forms.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header"></div>
-    </div>
-  </nav> -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h2>Sign Up Form</h2>
         <form class="signup">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="email-input">Email address</label>
             <input type="email" class="form-control" id="email-input" placeholder="Email" />
           </div>
           <div class="form-group">
-            <label for="exampleInputUsername1">Username</label>
+            <label for="username-input">User name</label>
             <input type="username" class="form-control" id="username-input" placeholder="Username" />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="password-input">Password</label>
             <input type="password" class="form-control" id="password-input" placeholder="Password" />
+          </div>
+          <div class="form-group">
+            <label for="github-input">GitHub user name</label>
+            <input type="username" class="form-control" id="github-input" placeholder="Github User Name" />
           </div>
           <div style="display: none" id="alert" class="alert alert-danger" role="alert">
             <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
             <span class="sr-only">Error:</span> <span class="msg"></span>
           </div>
-          <button type="submit" onclick=github() id="submitBtn" class="btn btn-default">Sign Up</button>
+          <button type="submit" id="submitBtn" class="btn btn-default">Sign Up</button>
           OR
-          <a href="/login/github">Sign Up with GitHub</a>
+          <button type="submit" class="btn btn-default"><a href="/login/github">Use GitHub</a></button>
 
         </form>
         <br />
@@ -47,7 +47,7 @@
     </div>
   </div>
 
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./assets/js/signup.js"></script>
