@@ -10,11 +10,6 @@ function displaySocketIo() {
 }
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> d6731932a65f42e784f95815daf0411bee0d11ef
 $(document).ready(function() {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
