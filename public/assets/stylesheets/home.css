@@ -63,3 +63,19 @@ body {
   transition: transform 250ms ease-in-out;
   background: linear-gradient(180deg, #653941 0%, #485287 100%);
 }
+
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  border-top: 1px solid rgba(104, 39, 39, 0.1);
+}
+
+.sidebarMenuInner li{
+  list-style: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
