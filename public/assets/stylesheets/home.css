@@ -18,6 +18,15 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#header-info {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 30px 0;
+  text-decoration: none;
+}
+
 .header {
   display: block;
   margin: 0 auto;
@@ -125,6 +134,7 @@ input[type=checkbox] {
   height: 3px;
   width: 100%;
   background-color: #fff;
+  margin-top: 20px;
 }
 
 .horizontal {
@@ -160,7 +170,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(135deg);
-  margin-top: 8px;
+  margin-top: 25px;
 }
 
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
