@@ -2,3 +2,10 @@
   box-sizing: border-box;
 }
 
+.header {
+  background-color: #8a898a;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
