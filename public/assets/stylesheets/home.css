@@ -6,6 +6,16 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+  div > .main_content {
+    text-align: center;
+    font-size: 45px;
+    background: green;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
 h2 {
   text-align: center;
   font-size: 45px;
@@ -22,7 +32,7 @@ h2 {
 } */
 
 /* Sidebar Styling */
-.wrapper .sidebar {
+div > .sidebar {
   width: 200px;
   height: 100%;
   background: rgb(130, 149, 155);
