@@ -30,3 +30,10 @@ body {
   overflow: hidden;
   z-index: 10;
 }
+
+.main {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  margin-top: 60px;
+}
