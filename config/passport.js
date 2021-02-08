@@ -36,6 +36,9 @@ passport.use(new LocalStrategy(
   }
 ));
 
+
+
+
 // In order to help keep authentication state across HTTP requests,
 // Sequelize needs to serialize and deserialize the user
 // Just consider this part boilerplate needed to make it all work
@@ -62,5 +65,22 @@ passport.use(new GitHubStrategy({
   }
 ));
 
+// var passport = require('passport')
+//   , FacebookStrategy = require('passport-facebook').Strategy;
+
+// passport.use(new FacebookStrategy({
+//     clientID: FACEBOOK_APP_ID,
+//     clientSecret: FACEBOOK_APP_SECRET,
+//     callbackURL: "http://www.example.com/auth/facebook/callback"
+//   },
+//   function(accessToken, refreshToken, profile, done) {
+//     User.findOrCreate(... function(err, user) {
+//       if (err) { return done(err); }
+//       done(null, user);
+//     });
+//   }
+// ));
+
 // Exporting our configured passport
 module.exports = passport;
+
