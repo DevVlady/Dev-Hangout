@@ -52,3 +52,14 @@ body {
   font-weight: bold;
   letter-spacing: 1.25px;
 }
+
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  margin-top: 60px;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  background: linear-gradient(180deg, #653941 0%, #485287 100%);
+}
