@@ -93,3 +93,7 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
