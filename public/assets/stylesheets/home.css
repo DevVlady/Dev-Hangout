@@ -6,4 +6,10 @@
     text-decoration: none;
 }
 
-
+h2 {
+    text-align: center;
+    font-size: 45px;
+    background-color: gray;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
