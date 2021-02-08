@@ -17,3 +17,16 @@ body {
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: green;
+  position: fixed;
+  height: 100px!important;
+  overflow: hidden;
+  z-index: 10;
+}
