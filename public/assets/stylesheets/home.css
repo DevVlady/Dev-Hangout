@@ -149,3 +149,9 @@ input[type=checkbox] {
   float: left;
   margin-top: 3px;
 }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
