@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  background: rgb(150, 133, 133);
+  background: #4DA0B0;
   padding: 0;
   margin: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,7 +33,7 @@ body {
   width: 100%;
   max-width: 100%;
   box-shadow: none;
-  background-color: black;
+  background-color: #403A3E;
   position: fixed;
   height: 100px!important;
   overflow: hidden;
@@ -70,7 +70,7 @@ body {
   margin-top: 100px;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background: linear-gradient(180deg, #653941 0%, #485287 100%);
+  background: linear-gradient(180deg, #114357 0%,  #4DA0B0 100%);
 }
 
 .sidebarMenuInner{
