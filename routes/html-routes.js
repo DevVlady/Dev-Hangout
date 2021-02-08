@@ -38,21 +38,23 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
+  //Profile Page Route
   app.get("/profile", function (req, res) {
     console.log("GET /profile");
-    // If the user already has an account send them to the profile page
-    // if (req.user) {
-    //   console.log("redirect /profile");
-    //   res.redirect("/profile");
-    // }
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
+  //Home Page Route
   app.get("/home", function (req, res) {
     console.log("GET /home");
     res.sendFile(path.join(__dirname, "../public/home.html"));
   });
 
+  //About Page Route
+  app.get("/about", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/about.html"));
+  });
 
 
   //GitHub - Routes to GitHub HTML if user uses Signin with GitHub
