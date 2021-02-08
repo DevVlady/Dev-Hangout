@@ -38,6 +38,17 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
+  app.get("/profile", function (req, res) {
+    console.log("GET /profile");
+    // If the user already has an account send them to the members page
+    // if (req.user) {
+    //   console.log("redirect /members");
+    //   res.redirect("/profile");
+    // }
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
+  });
+
+
   //GitHub - Routes to GitHub HTML if user uses Signin with GitHub
   app.get("/github", function (req, res) {
     console.log("GET /github");
