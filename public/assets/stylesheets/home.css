@@ -37,3 +37,10 @@ body {
   height: 100%;
   margin-top: 60px;
 }
+
+.mainInner{
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
