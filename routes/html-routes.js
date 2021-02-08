@@ -48,6 +48,12 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
+  app.get("/home", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
+
+
 
   //GitHub - Routes to GitHub HTML if user uses Signin with GitHub
   app.get("/github", function (req, res) {
