@@ -126,3 +126,11 @@ input[type=checkbox] {
   width: 100%;
   background-color: #fff;
 }
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
