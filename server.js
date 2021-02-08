@@ -18,7 +18,7 @@ require("dotenv").config();
 const client_id = process.env.GITHUB_CLIENT_ID;
 const client_secret = process.env.GITHUB_CLIENT_SECRET;
 const cookie_secret = process.env.COOKIE_SECRET;
-console.log({ client_id, client_secret })
+console.log({ client_id, client_secret });
 
 var socket = require('socket.io');
 
