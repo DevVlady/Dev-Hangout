@@ -141,3 +141,11 @@ input[type=checkbox] {
   box-sizing: border-box;
   float: left;
 }
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
