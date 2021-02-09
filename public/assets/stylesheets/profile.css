@@ -79,6 +79,7 @@ h1 {
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
   background: linear-gradient(180deg, #114357 0%,  #4DA0B0 100%);
+  z-index: 5;
 }
 
 .sidebarMenuInner{
@@ -212,6 +213,10 @@ img {
   color: #fff;
 }
 
+#githubId {
+
+}
+
 #githubUrl {
   font-weight: bold;
 }
@@ -249,7 +254,7 @@ ul {
 }
 
 .page {
-  height: 100%;
+  height: 50%;
   position: absolute;
   width: 84%;
   margin-top: 1px;
