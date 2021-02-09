@@ -33,6 +33,13 @@ h1 {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 576px) {
+  h1{
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}
+
 .header {
   display: block;
   margin: 0 auto;
@@ -58,6 +65,13 @@ h1 {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .mainInner{
+    height: 100%;
+    width: 80%;
+  }
 }
 
 .mainInner div{
@@ -136,6 +150,12 @@ input[type=checkbox] {
   top: 22px;
   left: 15px;
   width: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+  .sidebarIconToggle{
+    width: 25px;
+  }
 }
 
 .spinner {
@@ -262,6 +282,14 @@ ul {
   background-color: #000;
 }
 
+@media only screen and (max-width: 576px) {
+  .page{
+    width: 95%;
+    margin-left: -15px;
+    font-size: 15px;
+  }
+}
+
 .login.page .form {
   height: 100px;
   margin-top: -100px;
@@ -281,13 +309,31 @@ ul {
   width: 500px;
 }
 
+@media only screen and (max-width: 576px) {
+  .login.page .form .usernameInput{
+    width: 200px;
+  }
+}
+
 .login.page .title {
   font-size: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .login.page .title{
+    font-size: 20px;
+  }
 }
 
 .login.page .usernameInput {
   font-size: 50px;
   letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 576px) {
+  .login.page .usernameInput{
+    font-size: 20px;
+  }
 }
 
 .login.page .title,
@@ -307,8 +353,20 @@ ul {
   font-size: 15%;
 }
 
+@media only screen and (max-width: 576px) {
+  .messages{
+    font-size: 20px;
+  }
+}
+
 .inputMessage {
   font-size: 40%;
+}
+
+@media only screen and (max-width: 576px) {
+  .inputMessage{
+    font-size: 20px;
+  }
 }
 
 .log {
