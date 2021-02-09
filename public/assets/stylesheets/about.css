@@ -16,7 +16,7 @@ body {
   background: #4da0b0;
   padding: 0;
   margin: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
 }
 
 #header-info {
@@ -94,6 +94,10 @@ body {
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li:hover {
+  background-color: black;
 }
 
 .sidebarMenuInner li span{
