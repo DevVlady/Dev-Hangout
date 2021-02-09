@@ -95,6 +95,10 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
+.sidebarMenuInner li:hover {
+  background-color: black;
+}
+
 .sidebarMenuInner li span{
   display: block;
   font-size: 14px;
