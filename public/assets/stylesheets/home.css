@@ -44,8 +44,8 @@ body {
   margin: 0 auto;
   display: block;
   height: 100%;
-  /* margin-top: 60px; */
-  padding-top: 150px;
+  padding-top: 200px;
+  font-size: 50px;
 }
 
 .mainInner{
@@ -56,13 +56,17 @@ body {
 }
 
 .mainInner div{
-  /* font-size: 3em; */
+  /* font-size: 50px; */
   font-weight: bold;
   /* letter-spacing: 1.25px; */
   /* margin-top: 30px; */
   /* text-align: left; */
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.intro {
+  font-size: 90px;
 }
 
 #sidebarMenu {
