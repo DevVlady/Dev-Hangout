@@ -69,6 +69,11 @@ body {
   font-size: 90px;
 }
 
+.lead{
+  font-size: 35px;
+  color: rgb(222, 218, 218);
+}
+
 #sidebarMenu {
   height: 100%;
   position: fixed;
