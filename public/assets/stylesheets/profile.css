@@ -349,7 +349,7 @@ ul {
 /* Chat page */
 .chat.page {
   display: none;
-  background-color: rgb(176, 176, 176);
+  /* background-color: rgb(172, 172, 172); */
 }
 
 /* Font */
