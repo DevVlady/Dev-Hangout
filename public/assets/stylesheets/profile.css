@@ -6,6 +6,7 @@
   text-decoration: none;
 } */
 
+/* Styling Below Targets All Content Inside HTML */
 html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +24,7 @@ body {
   font-family: 'Jura', sans-serif;
 }
 
-/* Sidebar and Heder Styling */
+/* Styling Below Applies to Sidebar & Header */
 h1 {
   text-align: center;
   width: 100%;
@@ -51,36 +52,6 @@ h1 {
   height: 100px!important;
   overflow: hidden;
   z-index: 10;
-}
-
-.main {
-  margin: 0 auto;
-  display: block;
-  height: 100%;
-  margin-top: 60px;
-}
-
-.mainInner{
-  display: table;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-@media only screen and (max-width: 576px) {
-  .mainInner{
-    height: 100%;
-    width: 80%;
-  }
-}
-
-.mainInner div{
-  font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 1.25px;
-  margin-top: 30px;
-  text-align: left;
-  margin-left: 25px;
 }
 
 #sidebarMenu {
@@ -215,12 +186,38 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -10px;
 }
 
-/* **************************************** */
+/* Styling Below Targets All Content Inside Main Div*/
+.main {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  margin-top: 60px;
+}
 
-/* #profile-info {
-  display: inline;
-} */
+.mainInner{
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
 
+@media only screen and (max-width: 576px) {
+  .mainInner{
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.mainInner div{
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+/* Styling Below Targets Github Info */
 img {
   margin-top: -15px;
   height: 200px;
@@ -253,7 +250,7 @@ img {
   }
 }
 
-/**********************************BELOW IS SOCKET CSS*********************************************/
+/* Styling Below Applies to Socket-iO */
 .socket_content {
   width: 50%;
 }
