@@ -25,7 +25,7 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#header-info {
+h1 {
   text-align: center;
   width: 100%;
   color: #fff;
@@ -208,12 +208,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   padding-bottom: 35px;
 } */
 
-h3 > span {
-  font: outline;
-  font-size: 25px;
-  font-style: initial;
-  font-weight: 200;
-}
 
 #profile-info {
   display: inline;
