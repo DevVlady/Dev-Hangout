@@ -6,9 +6,16 @@
   text-decoration: none;
 } */
 
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
 html, body {
   overflow-x: hidden;
   height: 100%;
+  margin: 50;
+  padding: 0;
 }
 
 body {
@@ -40,12 +47,12 @@ body {
   z-index: 10;
 }
 
-.main {
+/* .main {
   margin: 0 auto;
   display: block;
   height: 100%;
   margin-top: 60px;
-}
+} */
 
 .mainInner{
   display: table;
@@ -77,6 +84,10 @@ body {
   margin:0;
   padding:0;
   border-top: 1px solid rgba(104, 39, 39, 0.1);
+}
+
+.user-picture {
+  height: 210px;
 }
 
 .sidebarMenuInner li{
@@ -189,13 +200,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 /* ************************ */
 
-h2 {
+/* h2 {
   text-align: center;
   font-size: 45px;
   background-color: gray;
   padding-top: 35px;
   padding-bottom: 35px;
-}
+} */
 
 h3 > span {
   font: outline;
@@ -212,30 +223,18 @@ img {
   margin-top: -15px;
   height: 200px;
   width: 200px;
-  margin-left: 0px;
   border-radius: 30%;
   margin-bottom: 15px;
-  float: left;
-  margin-right: 25px;
   background-color: rgb(130, 149, 155);
-  /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24); */
-}
-
-.main_content {
-  background-color: rgb(79, 233, 250);
-  margin-bottom: 55px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
 }
 
 #githubName {
-  color: blue;
+  color: #fff;
 }
 
 #githubUrl {
   font-weight: bold;
-}
-
-body {
-  background-color: #f3f5f9;
 }
 
 .wrapper {
@@ -335,18 +334,6 @@ body {
   width: 0px;
 }
 
-html {
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-}
-
-html,
-body {
-  height: 100%;
-  /* margin: 50; */
-  padding: 0;
-}
-
 ul {
   list-style: none;
   word-wrap: break-word;
@@ -369,7 +356,6 @@ ul {
 }
 
 /* Login Page */
-
 .login.page {
   background-color: #000;
 }
