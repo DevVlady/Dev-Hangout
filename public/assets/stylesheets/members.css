@@ -140,11 +140,24 @@ body {
   font-family: "Fjalla One", sans-serif;
 }
 
-@media (max-height: 500px) {
+/* @media (max-height: 500px) {
   .social_media {
       display: none !important;
   }
+} */
+
+@media screen and (max-width:480px){
+  /* body {
+    background:red;
+
+  } */
+
+  .sidebar {
+    width:100px;
+  }
 }
+
+
 
 
 /**********************************BELOW IS SOCKET CSS*********************************************/
@@ -284,3 +297,4 @@ ul {
   right: 0;
   width: 100%;
 }
+
