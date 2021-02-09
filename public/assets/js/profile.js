@@ -4,7 +4,7 @@ chatButton.addEventListener('click', displaySocketIo);
 
 //Toggle Session for LiveChat
 function displaySocketIo() {
-  const socketIoSection = document.querySelector('#socket-content');
+  const socketIoSection = document.querySelector('.socket_content');
   if (socketIoSection.classList.contains('d-none')) {
     socketIoSection.classList.remove('d-none');
   } else {

@@ -213,10 +213,6 @@ img {
   color: #fff;
 }
 
-#githubId {
-
-}
-
 #githubUrl {
   font-weight: bold;
 }
@@ -236,8 +232,8 @@ img {
 }
 
 /**********************************BELOW IS SOCKET CSS*********************************************/
-#socket_content {
-  width: 100%;
+.socket_content {
+  width: 50%;
 }
 
 ul {
@@ -303,6 +299,7 @@ ul {
 /* Chat page */
 .chat.page {
   display: none;
+  background-color: rgb(136, 132, 134);
 }
 
 /* Font */
