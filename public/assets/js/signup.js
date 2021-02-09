@@ -27,7 +27,7 @@ $(document).ready(function() {
     githubInput.val("");
   });
 
-  // Does a post to the signup route. If successful, we are redirected to the members page
+  // Does a post to the signup route. If successful, we are redirected to the profile page
   // Otherwise we log any errors
   function signUpUser(userData) {
     $.post("/api/signup", {
@@ -37,7 +37,7 @@ $(document).ready(function() {
       githubname: userData.githubname
     })
       .then(function(data) {
-        window.location.replace("/members");
+        window.location.replace("/profile");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);
