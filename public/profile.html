@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
   <link rel="shortcut icon" href="./assets/icons/Prorammer-Icon.png" type="image/x-icon">
@@ -16,38 +17,33 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="sidebar">
-      <a id="dash" href="./index.html">
-        <h3>Dev Meet-Up</h3>
-      </a>
-      <ul>
-        <li>
-          <a href="/home"><i class="fas fa-home"></i>Home</a>
-        </li>
-        <li>
-          <a href="/profile"><i class="fas fa-user"></i>Profile</a>
-          <!-- <a href="/github"><i class="fas fa-user"></i>Profile</a> -->
-        </li>
-        <li>
-          <a href=""><i class="fas fa-map-pin"></i>Map</a>
-        </li>
-        <li>
-          <a id="chatBtn" href="#"><i class="fas fa-comments"></i>Toggle Live Chat</a>
-        </li>
-        <li>
-          <a href="/logout"><i class="fas fa-power-off"></i>Logout</a>
-        </li>
-      </ul>
-    </div>
-    <div class="main_content">
+
+  <div class="header">
+    <h1>Welcome <span id="githubName"></span></h1>
+  </div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><span><img id="profilepic" alt="Profile Pic"></span></li>
+      <li><a href="/home"><i class="fa fa-home" aria-hidden="true"> HOME</i></a></li>
+      <li><a href="/profile"><i class="bi bi-person-circle"></i> PROFILE</a></li>
+      <li><a href="/about"><i class="bi bi-people-fill"></i> ABOUT</a></li>
+      <li><a href="/map"><i class="bi bi-geo-alt-fill"></i> MAP</a></li>
+      <li><a href="/info"><i class="bi bi-info-circle-fill"></i> INFO</a></li>
+      <li><a href="/logout"><i class="bi bi-power"></i> LOGOFF</a></li>
+    </ul>
+  </div>
+
+  <div id='center' class="main center">
+    <div class="mainInner">
       <div class="row">
-        <h2>Welcome <span id="githubName"></span></h2>
         <div id="profile-info">
-          <img id="profilepic" alt="Profile Pic">
-          <h3>
-            Bio: <span id="bio"></span>
-          </h3>
+          <h3>Bio: <span id="bio"></span></h3>
           <h3>Followers: <span id="followers" style="color: red"></span></h3>
           <h3>Following: <span id="following" style="color: blue"></span></h3>
           <h3>Username: <span id="githubId" style="opacity: 0.8"></span></h3>
@@ -56,25 +52,49 @@
           <h3><span><a id="githubUrl">GitHub Profile</a></span></h3>
         </div>
       </div>
-      <div class="row d-none" id="socket-content">
-        <div class="socket_content">
-          <ul class="pages">
-            <li class="chat page">
-              <div class="chatArea">
-                <ul class="messages"></ul>
-              </div>
-              <input class="inputMessage" placeholder="Type here..." />
-            </li>
-            <li class="login page">
-              <div class="form">
-                <h3 class="title">What's your user/name?</h3>
-                <input class="usernameInput" type="text" maxlength="14" />
-              </div>
-            </li>
-          </ul>
-        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- <div class="wrapper"> -->
+
+  <div class="main_content">
+    <div class="row">
+      <div id="profile-info">
+        <h3>
+          Bio: <span id="bio"></span>
+        </h3>
+        <h3>Followers: <span id="followers" style="color: red"></span></h3>
+        <h3>Following: <span id="following" style="color: blue"></span></h3>
+        <h3>Username: <span id="githubId" style="opacity: 0.8"></span></h3>
+        <h3>Location: <span id="location"></span></h3>
+        <h3>Public Repos: <span id="gitrepos"></span></h3>
+        <h3><span><a id="githubUrl">GitHub Profile</a></span></h3>
       </div>
     </div>
+    <div class="row d-none" id="socket-content">
+      <div class="socket_content">
+        <ul class="pages">
+          <li class="chat page">
+            <div class="chatArea">
+              <ul class="messages"></ul>
+            </div>
+            <input class="inputMessage" placeholder="Type here..." />
+          </li>
+          <li class="login page">
+            <div class="form">
+              <h3 class="title">What's your user/name?</h3>
+              <input class="usernameInput" type="text" maxlength="14" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/profile.js"></script>
