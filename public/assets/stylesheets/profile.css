@@ -191,7 +191,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin: 0 auto;
   display: block;
   height: 100%;
-  margin-top: 60px;
+  padding-top: 110px;
 }
 
 .mainInner{
@@ -212,9 +212,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   font-size: 3em;
   font-weight: bold;
   letter-spacing: 1.25px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   text-align: left;
   margin-left: 25px;
+  margin-right: 25px;
 }
 
 /* Styling Below Targets Github Info */
