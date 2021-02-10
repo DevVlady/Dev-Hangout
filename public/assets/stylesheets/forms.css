@@ -47,7 +47,7 @@ h2 {
 
 #submitBtn:hover {
   background: black;
-  color: white;
+  color: rgb(222, 218, 218);
 }
 
 .signin-form {
