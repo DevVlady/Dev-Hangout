@@ -76,6 +76,8 @@ body {
 
 .card-title{
   color: rgb(222, 218, 218);
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 #vlads-social{
@@ -84,14 +86,22 @@ body {
 
 #vlads-social > a{
   margin-left: 15px;
+  font-size: 20px;
 }
 
 #mikes-social{
   display: flex;
+  font-size: 25px;
 }
 
 #mikes-social > a{
   margin-left: 15px;
+  font-size: 20px;
+
+}
+
+.card-text{
+  color: rgb(222, 218, 218);
 }
 
 img{
