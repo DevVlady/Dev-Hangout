@@ -44,28 +44,15 @@ body {
 
 .main {
   margin: 0 auto;
-  /* display: block; */
-  /* height: 100%; */
-  /* padding-top: 180px; */
-  /* align-items: center; */
 }
 
 .mainInner {
-  /* display: table; */
-  /* height: 100%; */
-  /* width: 100%; */
-  /* text-align: center; */
   padding-top: 120px;
-  /* margin: 0 auto; */
 }
 
 .mainInner div {
-  /* font-size: 3em; */
   font-weight: bold;
   letter-spacing: 1.25px;
-  /* margin-top: 30px; */
-  /* text-align: left; */
-  /* margin-left: 25px; */
   margin: 0 auto;
 }
 
@@ -73,7 +60,7 @@ body {
   background: #114357;
   border-radius: 30px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
-
+  width: 30rem;
 }
 
 .card:hover {
@@ -111,10 +98,14 @@ body {
   color: rgb(222, 218, 218);
 }
 
+.list-group-item{
+  background: #4da0b0;
+}
+
 img {
-  width: 0px;
   height: 600px;
   margin-top: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
 }
 
 #contactBtn {
