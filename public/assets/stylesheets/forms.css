@@ -1,8 +1,7 @@
-
 body {
-  background-color: #1F2833;
+  background-color: #1f2833;
   margin: 0px;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 h2 {
@@ -10,7 +9,7 @@ h2 {
 }
 
 .container {
-  background-color: #403A3E;
+  background-color: #403a3e;
   color: rgb(222, 218, 218);
   position: absolute;
   left: 50%;
@@ -22,31 +21,31 @@ h2 {
   width: 45%;
 }
 
-@media screen and (max-width:480px){
-    .container {
-      width:max-content;
-    }
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 80%;
   }
-
-  #myVideo {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
-    z-index: -10;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
 }
 
-#githubBtn:hover{
+#myVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+  z-index: -10;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#githubBtn:hover {
   background: black;
 }
 
-#submitBtn:hover{
+#submitBtn:hover {
   background: black;
   color: white;
 }
@@ -55,8 +54,25 @@ h2 {
   margin: 80px;
 }
 
+@media only screen and (max-width: 576px) {
+  .signin-form {
+    margin: 20px;
+    padding: 20px;
+  }
+}
 
+@media only screen and (max-width: 800px) {
+  .signin-form {
+    margin: 10px;
+  }
+}
 
 .signup-form {
   margin: 80px;
+}
+
+@media only screen and (max-width: 576px) {
+  .signup-form {
+    margin: 20px;
+  }
 }
