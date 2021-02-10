@@ -56,6 +56,12 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/about.html"));
   });
 
+  //Contact Us Page Route
+  app.get("/contact", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
+  });
+
 
   //GitHub - Routes to GitHub HTML if user uses Signin with GitHub
   app.get("/github", function (req, res) {
