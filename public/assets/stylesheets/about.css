@@ -102,6 +102,20 @@ body {
   background: #4da0b0;
 }
 
+.card-link{
+  border: none;
+  text-decoration: none;
+  background: black;
+  padding: 10px;
+  border-radius: 30px;
+  color: rgb(222, 218, 218);
+}
+
+.card-link:hover{
+  background: #4da0b0;
+  color: black;
+}
+
 img {
   height: 600px;
   margin-top: 10px;
@@ -112,7 +126,7 @@ img {
   width: 150px;
   margin: 0 auto;
   border: none;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 10px;
   text-decoration: none;
   background: #114357;
