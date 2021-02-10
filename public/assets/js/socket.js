@@ -23,9 +23,9 @@ $(function () {
     const addParticipantsMessage = (data) => {
         var message = '';
         if (data.numUsers === 1) {
-            message += "there's 1 participant";
+            message += "Active Participants: 1";
         } else {
-            message += `there are ${data.numUsers} particpants`;
+            message += `Active Participants: ${data.numUsers}`;
         }
         log(message);
     }
@@ -197,7 +197,7 @@ $(function () {
     socket.on('login', (data) => {
         connected = true;
         // Display the welcome message
-        var message = "Welcome to Socket.IO Chat – ";
+        var message = "Welcome to Dev Hangout Group Chat";
         log(message, {
             prepend: true
         });

@@ -11,7 +11,7 @@ main {
     margin-right: auto;
     height: 100vh;
     display: flex;
-    color: #FFF;
+    color: rgb(222, 218, 218);
     z-index: 10;
     /* background-image: url('https://i.pinimg.com/originals/de/fa/28/defa283a2b0cec1ebabede862375bfb6.jpg'); */
 }
