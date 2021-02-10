@@ -1,7 +1,7 @@
 /* Applies to all sections of HTML */
 
 body {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Jura', sans-serif;
 }
 
 /* Home-Page */
@@ -12,7 +12,23 @@ main {
     height: 100vh;
     display: flex;
     color: #FFF;
-    background-image: url('https://i.pinimg.com/originals/de/fa/28/defa283a2b0cec1ebabede862375bfb6.jpg');
+    z-index: 10;
+    /* background-image: url('https://i.pinimg.com/originals/de/fa/28/defa283a2b0cec1ebabede862375bfb6.jpg'); */
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+    z-index: -10;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    /* opacity: 0.8; */
 }
 
 main > div {
@@ -30,6 +46,13 @@ img {
     padding: 10px;
     margin: 15px;
     font-size: 30px;
+    background: #4DA0B0;
+    border: none;
+}
+
+#continue-button:hover {
+    background: #114357;
+    border: none;
 }
 
 h6 {
@@ -54,12 +77,6 @@ h6:hover .lets-hang{
     color:#c3073f;
     font-size: 45px;
 }
-
-#submit-message{
-    color: #4e4e50;
-    margin: 25px;
-}
-
 
 /* Change styles for span on extra small screens */
 @media screen and (max-width: 300px) {

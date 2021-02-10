@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="Description" content="Enter your description here" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"">
   <link rel=" stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
@@ -19,7 +21,7 @@
 <body>
 
   <div class="header">
-    <h1>Welcome <span id="githubName"></span></h1>
+    <h1 id="header-info">Welcome <span id="githubName"></span></h1>
   </div>
   <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
   <label for="openSidebarMenu" class="sidebarIconToggle">
@@ -29,12 +31,12 @@
   </label>
   <div id="sidebarMenu">
     <ul class="sidebarMenuInner">
-      <li class="user-picture"><span><img id="profilepic" alt="Profile Pic"></span></li>
-      <li><a href="/home"><i class="fa fa-home" aria-hidden="true"> HOME</i></a></li>
+      <li class="user-picture" style="background-color: black;"><span><img id="profilepic" alt="Profile Pic"></span></li>
+      <li><a href="/home"><i class="bi bi-house-fill"></i> HOME</a></li>
       <li><a id="chatBtn" href="#"><i class="bi bi-chat-dots-fill"></i> CHAT</a></li>
       <li><a href="/about"><i class="bi bi-people-fill"></i> ABOUT</a></li>
       <li><a href="/map"><i class="bi bi-geo-alt-fill"></i> MAP</a></li>
-      <li><a href="/info"><i class="bi bi-info-circle-fill"></i> INFO</a></li>
+      <li><a href="/contact"><i class="bi bi-envelope-fill"></i> CONTACT</a></li>
       <li><a href="/logout"><i class="bi bi-power"></i> LOGOFF</a></li>
     </ul>
   </div>
@@ -43,12 +45,12 @@
     <div class="mainInner">
       <div class="row">
         <div id="profile-info">
-          <h3>Bio: <span id="bio"></span></h3>
-          <h3>Followers: <span id="followers" style="color: red"></span></h3>
-          <h3>Following: <span id="following" style="color: blue"></span></h3>
-          <h3>Username: <span id="githubId" style="opacity: 0.8"></span></h3>
-          <h3>Location: <span id="location"></span></h3>
-          <h3>Public Repos: <span id="gitrepos"></span></h3>
+          <h3>About: <span id="bio" style="color: rgb(222, 218, 218);"></span></h3>
+          <h3>You currently have <span id="followers" style="color: rgb(222, 218, 218);"></span> followers</h3>
+          <h3>You are currently following <span id="following" style="color: rgb(222, 218, 218);"></span> users</h3>
+          <h3>Github User: <span id="githubId" style="color: rgb(222, 218, 218);"></span></h3>
+          <h3>Location: <span id="location" style="color: rgb(222, 218, 218);"></span></h3>
+          <h3>Currently you have  <span id="gitrepos" style="color: rgb(222, 218, 218);"></span> public repositories</h3>
           <h3><span><a id="githubUrl">GitHub Profile</a></span></h3>
         </div>
       </div>

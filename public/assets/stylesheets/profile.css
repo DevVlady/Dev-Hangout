@@ -6,6 +6,7 @@
   text-decoration: none;
 } */
 
+/* Styling Below Targets All Content Inside HTML */
 html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -20,10 +21,10 @@ html, body {
 
 body {
   background: #4DA0B0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Jura', sans-serif;
 }
 
-/* Sidebar and Heder Styling */
+/* Styling Below Applies to Sidebar & Header */
 h1 {
   text-align: center;
   width: 100%;
@@ -53,35 +54,17 @@ h1 {
   z-index: 10;
 }
 
-.main {
-  margin: 0 auto;
-  display: block;
-  height: 100%;
-  margin-top: 60px;
-}
-
-.mainInner{
-  display: table;
-  height: 100%;
-  width: 100%;
+#header-info {
   text-align: center;
+  width: 100%;
+  color: #4DA0B0;
+  text-transform: uppercase;
+  padding: 30px 0;
+  text-decoration: none;
+  font-weight: 900;
 }
 
-@media only screen and (max-width: 576px) {
-  .mainInner{
-    height: 100%;
-    width: 80%;
-  }
-}
 
-.mainInner div{
-  font-size: 3em;
-  font-weight: bold;
-  letter-spacing: 1.25px;
-  margin-top: 30px;
-  text-align: left;
-  margin-left: 25px;
-}
 
 #sidebarMenu {
   height: 100%;
@@ -113,6 +96,10 @@ h1 {
   padding: 20px;
   cursor: pointer;
   border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li:hover {
+  background-color: black;
 }
 
 .sidebarMenuInner li span{
@@ -164,7 +151,7 @@ input[type=checkbox] {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #fff;
+  background-color: #4DA0B0;
   margin-top: 20px;
 }
 
@@ -211,12 +198,39 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   margin-top: -10px;
 }
 
-/* **************************************** */
+/* Styling Below Targets All Content Inside Main Div*/
+.main {
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  padding-top: 110px;
+}
 
-/* #profile-info {
-  display: inline;
-} */
+.mainInner{
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
 
+@media only screen and (max-width: 576px) {
+  .mainInner{
+    height: 100%;
+    width: 80%;
+  }
+}
+
+.mainInner div{
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  /* margin-top: 30px; */
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Styling Below Targets Github Info */
 img {
   margin-top: -15px;
   height: 200px;
@@ -228,7 +242,7 @@ img {
 }
 
 #githubName {
-  color: #fff;
+  color: rgb(222, 218, 218);
 }
 
 #githubUrl {
@@ -249,7 +263,7 @@ img {
   }
 }
 
-/**********************************BELOW IS SOCKET CSS*********************************************/
+/* Styling Below Applies to Socket-iO */
 .socket_content {
   width: 50%;
 }
@@ -345,7 +359,7 @@ ul {
 /* Chat page */
 .chat.page {
   display: none;
-  background-color: rgb(176, 176, 176);
+  /* background-color: rgb(172, 172, 172); */
 }
 
 /* Font */
