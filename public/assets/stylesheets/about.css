@@ -45,18 +45,18 @@ body {
 .main {
   margin: 0 auto;
   /* display: block; */
-  height: 100%;
+  /* height: 100%; */
   /* padding-top: 180px; */
-  align-items: center;
-
+  /* align-items: center; */
 }
 
 .mainInner{
   /* display: table; */
-  height: 100%;
-  width: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   /* text-align: center; */
-  padding-top: 150px;
+  padding-top: 110px;
+  /* margin: 0 auto; */
 }
 
 .mainInner div{
@@ -64,8 +64,20 @@ body {
   font-weight: bold;
   letter-spacing: 1.25px;
   /* margin-top: 30px; */
-  text-align: left;
+  /* text-align: left; */
   /* margin-left: 25px; */
+  margin: 0 auto;
+}
+
+.card{
+  background: #114357;
+  border-radius: 30px;
+}
+
+img{
+  width: 150px;
+  height: 650px;
+  margin-top: 10px;
 }
 
 #sidebarMenu {
