@@ -74,6 +74,26 @@ body {
   border-radius: 30px;
 }
 
+.card-title{
+  color: rgb(222, 218, 218);
+}
+
+#vlads-social{
+  display: flex;
+}
+
+#vlads-social > a{
+  margin-left: 15px;
+}
+
+#mikes-social{
+  display: flex;
+}
+
+#mikes-social > a{
+  margin-left: 15px;
+}
+
 img{
   width: 0px;
   height: 600px;
