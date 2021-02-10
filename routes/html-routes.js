@@ -13,39 +13,53 @@ const cookie_secret = process.env.COOKIE_SECRET;
 
 module.exports = function (app) {
   app.get("/", function (req, res) {
-    // If the user already has an account send them to the members page
+    // If the user already has an account send them to the profile page
     if (req.user) {
-      res.redirect("/members");
+      res.redirect("/profile");
     }
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   app.get("/signup", function (req, res) {
-    // If the user already has an account send them to the members page
+    // If the user already has an account send them to the profile page
     if (req.user) {
-      res.redirect("/members");
+      res.redirect("/profile");
     }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   app.get("/login", function (req, res) {
     console.log("GET /login");
-    // If the user already has an account send them to the members page
+    // If the user already has an account send them to the profile page
     if (req.user) {
-      console.log("redirect /members");
-      res.redirect("/members");
+      console.log("redirect /profile");
+      res.redirect("/profile");
     }
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
+  //Profile Page Route
   app.get("/profile", function (req, res) {
     console.log("GET /profile");
-    // If the user already has an account send them to the members page
-    // if (req.user) {
-    //   console.log("redirect /members");
-    //   res.redirect("/profile");
-    // }
     res.sendFile(path.join(__dirname, "../public/profile.html"));
+  });
+
+  //Home Page Route
+  app.get("/home", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
+
+  //About Page Route
+  app.get("/about", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/about.html"));
+  });
+
+  //Contact Us Page Route
+  app.get("/contact", function (req, res) {
+    console.log("GET /home");
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
   });
 
 
@@ -118,15 +132,15 @@ module.exports = function (app) {
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/members", isAuthenticated, function (req, res) {
-    console.log("GET /members");
-    res.sendFile(path.join(__dirname, "../public/members.html"));
+  app.get("/profile", isAuthenticated, function (req, res) {
+    console.log("GET /profile");
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
   // app.get("/chat", function (req, res) {
-  //   // If the user already has an account send them to the members page
+  //   // If the user already has an account send them to the profile page
   //   // if (req.user) {
-  //   //   res.redirect("/members");
+  //   //   res.redirect("/profile");
   //   // }
   //   res.sendFile(path.join(__dirname, "../public/socketio.html"));
   // });
