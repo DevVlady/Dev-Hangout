@@ -40,5 +40,13 @@ h2 {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    /* opacity: 0.8; */
+}
+
+#githubBtn:hover{
+  background: black;
+}
+
+#submitBtn:hover{
+  background: black;
+  color: white;
 }
