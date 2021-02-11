@@ -16,13 +16,13 @@ body {
   background: #4da0b0;
   padding: 0;
   margin: 0;
-  font-family: 'Jura', sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 #header-info {
   text-align: center;
   width: 100%;
-  color: #4DA0B0;
+  color: #4da0b0;
   text-transform: uppercase;
   padding: 30px 0;
   text-decoration: none;
@@ -35,37 +35,109 @@ body {
   width: 100%;
   max-width: 100%;
   box-shadow: none;
-  background-color: #403A3E;
+  background-color: #403a3e;
   position: fixed;
-  height: 100px!important;
+  height: 100px !important;
   overflow: hidden;
   z-index: 10;
 }
 
 .main {
   margin: 0 auto;
-  /* display: block; */
-  height: 100%;
-  /* padding-top: 180px; */
-  align-items: center;
-
 }
 
-.mainInner{
-  /* display: table; */
-  height: 100%;
-  width: 100%;
-  /* text-align: center; */
-  padding-top: 150px;
+.mainInner {
+  padding-top: 120px;
 }
 
-.mainInner div{
-  /* font-size: 3em; */
+.mainInner div {
   font-weight: bold;
   letter-spacing: 1.25px;
-  /* margin-top: 30px; */
-  text-align: left;
-  /* margin-left: 25px; */
+  margin: 0 auto;
+}
+
+.card {
+  background: #114357;
+  border-radius: 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
+  width: 30rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card-title {
+  color: rgb(222, 218, 218);
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#vlads-social {
+  display: flex;
+}
+
+#vlads-social > a {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+#mikes-social {
+  display: flex;
+  font-size: 25px;
+}
+
+#mikes-social > a {
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.card-text {
+  color: rgb(222, 218, 218);
+}
+
+.list-group-item{
+  background: #4da0b0;
+}
+
+.card-link{
+  border: none;
+  text-decoration: none;
+  background: black;
+  padding: 10px;
+  border-radius: 30px;
+  color: rgb(222, 218, 218);
+}
+
+.card-link:hover{
+  background: #4da0b0;
+  color: black;
+}
+
+img {
+  height: 600px;
+  margin-top: 10px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12), 0 50px 45px rgba(0, 0, 0, 0.24);
+}
+
+#contactBtn {
+  width: 150px;
+  margin: 0 auto;
+  border: none;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #114357;
+  text-align: center;
+  padding: 10px;
+  color: rgb(222, 218, 218);
+}
+
+#contactBtn:hover {
+  background: rgb(222, 218, 218);
+  color: black;
 }
 
 #sidebarMenu {
@@ -76,13 +148,13 @@ body {
   margin-top: 100px;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background: linear-gradient(180deg, #114357 0%,  #4DA0B0 100%);
+  background: linear-gradient(180deg, #114357 0%, #4da0b0 100%);
   z-index: 5;
 }
 
-.sidebarMenuInner{
-  margin:0;
-  padding:0;
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
   border-top: 1px solid rgba(104, 39, 39, 0.1);
 }
 
@@ -90,28 +162,28 @@ body {
   height: 210px;
 }
 
-.sidebarMenuInner li{
+.sidebarMenuInner li {
   list-style: none;
-  color: #fff;
+  color: rgb(222, 218, 218);
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebarMenuInner li:hover {
   background-color: black;
 }
 
-.sidebarMenuInner li span{
+.sidebarMenuInner li span {
   display: block;
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.sidebarMenuInner li a{
-  color: #fff;
+.sidebarMenuInner li a {
+  color: rgb(222, 218, 218);
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -122,7 +194,7 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   transition: all 0.3s;
   box-sizing: border-box;
   display: none;
@@ -147,7 +219,7 @@ input[type=checkbox] {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #4DA0B0;
+  background-color: #4da0b0;
   margin-top: 20px;
 }
 
@@ -174,20 +246,20 @@ input[type=checkbox] {
   margin-top: 5px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
   transition: all 0.3s;
   box-sizing: border-box;
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(135deg);
   margin-top: 25px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transition: all 0.3s;
   box-sizing: border-box;
   transform: rotate(-135deg);

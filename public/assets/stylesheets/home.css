@@ -57,22 +57,31 @@ body {
 }
 
 .mainInner div{
-  /* font-size: 50px; */
   font-weight: bold;
-  /* letter-spacing: 1.25px; */
-  /* margin-top: 30px; */
-  /* text-align: left; */
   margin-left: 25px;
   margin-right: 25px;
 }
 
 .intro {
-  font-size: 90px;
+  font-size: 80px;
 }
 
 .lead{
   font-size: 35px;
   color: rgb(222, 218, 218);
+}
+
+span{
+  color: rgb(222, 218, 218);
+}
+
+.details{
+  font-size: 25px;
+}
+
+ul{
+  text-align: left;
+  padding-left: 100px;
 }
 
 #learnBtn{
@@ -109,7 +118,7 @@ body {
 
 .sidebarMenuInner li{
   list-style: none;
-  color: #fff;
+  color: rgb(222, 218, 218);
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
@@ -128,7 +137,7 @@ body {
 }
 
 .sidebarMenuInner li a{
-  color: #fff;
+  color: rgb(222, 218, 218);
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
