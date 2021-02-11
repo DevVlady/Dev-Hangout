@@ -3,6 +3,7 @@ var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
+const API_KEY = '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'
 
 
 // Setting up port and requiring models for syncing
