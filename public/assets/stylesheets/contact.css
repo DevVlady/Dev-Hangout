@@ -52,12 +52,13 @@ body {
 
 .mainInner div {
   font-weight: bold;
-  background: lightcoral;
+  background: #114357
 }
 
 .contact-form{
   padding: 80px;
   border-radius: 30px;
+  color: rgb(233, 230, 230);
 }
 
 .mb-3{

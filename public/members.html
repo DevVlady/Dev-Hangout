@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="./assets/icons/Prorammer-Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="./assets/stylesheets/members.css">
+    <title>Members</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+      <a id="dash" href="./index.html">
+        <h3>Dev Meet-Up</h3>
+      </a>
+      <ul>
+        <li>
+          <a href="/members"><i class="fas fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="/profile"><i class="fas fa-user"></i>Profile</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-address-card"></i>About</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-map-pin"></i>Map</a>
+        </li>
+        <li>
+          <a id="chatBtn" href="#"><i class="fas fa-comments"></i>Toggle Live Chat</a>
+        <li>
+          <a href="/logout"><i class="fas fa-power-off"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+    <div class="main_content">
+      <div class="row">
+        <h2>Welcome <span id="githubName"></span></h2>
+        <div id="profile-info">
+          <img id="profilepic" alt="Profile Pic">
+          <h3>
+            Bio: <span id="bio"></span>
+          </h3>
+          <!-- <h3>Followers: <span id="followers" style="color: red"></span></h3>
+          <h3>Following: <span id="following" style="color: blue"></span></h3>
+          <h3>Username: <span id="githubId" style="opacity: 0.8"></span></h3>
+          <h3>Location: <span id="location"></span></h3>
+          <h3>Public Repos: <span id="gitrepos"></span></h3>
+          <h3><span ><a id="githubUrl">GitHub Profile</a></span></h3> -->
+        </div>
+      </div>
+      <div class="row d-none" id="socket-content">
+        <div class="socket_content">
+          <ul class="pages">
+            <li class="chat page">
+              <div class="chatArea">
+                <ul class="messages"></ul>
+              </div>
+              <input class="inputMessage" placeholder="Type here..." />
+            </li>
+            <li class="login page">
+              <div class="form">
+                <h3 class="title">What's your user/name?</h3>
+                <input class="usernameInput" type="text" maxlength="14" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/members.js"></script>
+    <script src="assets/js/socket.js"></script>
+</body>
+
+</html>

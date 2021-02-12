@@ -4,6 +4,10 @@ var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
+//need to install dependency for this this. need to do npm install @sendgrid/mail
+import{ init } from 'emailjs-com';
+init("user_uUtrRyGsoUMd0aTdjzprd");
+
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
