@@ -34,7 +34,7 @@ This project is licensed under the MIT license
 
 ## Image
 
-![image](https://user-images.githubusercontent.com/71519918/103468465-d0100300-4d1e-11eb-860d-781d8b15deb2.png)
+![image](https://user-images.githubusercontent.com/71519918/108144066-82f9ad80-708e-11eb-89b8-bfd1a55d9a33.png)
 
 ## Website
 
